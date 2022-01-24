@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(60,80,60);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+h1, p{
+    color: white;
+}
+#poisson{
+    display: flex;
+    justify-content: center;
+    margin-top:3em;
+    transform:translate(4em,0)
+}
+
+#poisson #carre1{
+    height: 0;
+    width: 0;
+    border:150px solid rgb(0, 255, 136);
+    transform: translate(0,70px) rotate(45deg);
+}
+
+#poisson #carre2{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 75px solid rgb(134, 132, 6);
+    transform: translate(0px,-150px) rotate(0deg);
+}
+
+#poisson #trianglehaut{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 120px solid rgb(0, 204, 255);
+    border-bottom: 120px solid transparent;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    transform: translate(-270px,-100.5px) rotate(-45deg);
+}
+#poisson #trianglebas{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 120px solid rgb(0, 204, 255);
+    border-bottom: 120px solid transparent;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    transform: translate(-139.5px,30px) rotate(135deg);
+}
+#poisson #queuehaut{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 25px solid rgb(72, 255, 0);
+    border-bottom: 25px solid  rgb(72, 255, 0);
+    border-left: 90px solid rgb(72, 255, 0);
+    border-right: 90px solid rgb(72, 255, 0);
+    transform: translate(-320px,99.5px) rotate(0deg) skewX(20deg);
+}
+#poisson #queuebas{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 25px solid rgb(72, 255, 0);
+    border-bottom: 25px solid  rgb(72, 255, 0);
+    border-left: 90px solid rgb(72, 255, 0);
+    border-right: 90px solid rgb(72, 255, 0);
+    transform: translate(-215px,205px) rotate(90deg) skewX(-20deg);
+}
+
+#pingouin{
+    display: flex;
+    justify-content: center;
+    margin-top:9em;
+}
+
+#pingouin #ovale{
+    height: 0;
+    width: 0;
+    border:150px solid rgb(117, 117, 117);
+    border-radius: 170px 350px;
+    transform: rotateZ(45deg);
+}
+
+#pingouin #tete{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border:45px solid rgb(142, 142, 142);
+    border-radius: 90%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translate(-189px,-189px) rotateZ(-45deg) scale(1.5, 1.5);
+}
+
+#pingouin #pattehautgauche{
+    position: absolute;
+    height: 0;
+    width: 0;
+    transform: translate(-170px,10px) rotateZ(-390deg) skewX(-20deg);
+    border-top:140px solid rgb(115, 115, 115);
+    border-right:40px solid rgb(128, 128, 128);
+    border-bottom-left-radius: 90%;
+}
+
+#pingouin #pattehautdroite{
+    position: absolute;
+    height: 0;
+    width: 0;
+    transform: translate(70px,-200px) rotateZ(-86deg) skewX(-20deg);
+    border-top:140px solid rgb(164, 164, 164);
+    border-right:40px solid rgb(86, 86, 86);
+    border-bottom-right-radius: 90%;
+}
+
+@media (max-width: 320px) {
+    #animal{
+        display:none;
+    }
+}
+
+@media  (width: 414px) and (height:896px){
+    #animal *{
+        transform: scale(.6,.6);
+    }
+    
+    #animal #poisson *{
+        border-color: red;
+    }
+    #poisson #trianglehaut{
+        border-top: 120px solid rgb(255, 0, 0);
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+    }
+}
