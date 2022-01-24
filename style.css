@@ -74,7 +74,7 @@ h1, p{
 #pingouin{
     display: flex;
     justify-content: center;
-    margin-top:9em;
+    margin-top:17em;
 }
 
 #pingouin #ovale{
@@ -115,6 +115,168 @@ h1, p{
     border-right:40px solid rgb(86, 86, 86);
     border-bottom-right-radius: 90%;
 }
+
+#crabe{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10em;
+}
+
+#crabe #corps1{
+    
+    height: 0;
+    width: 0;
+    border: 70px solid orangered;
+    -webkit-clip-path: polygon(19% 100%, 85% 100%, 100% 0, 0 0); 
+    clip-path: polygon(19% 100%, 85% 100%, 100% 0, 0 0);
+}
+
+#crabe #corps2{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 70px solid orangered;
+    transform: translate(0,130px);
+    clip-path: polygon(19% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+#crabe #corpsdroite1{
+    position: absolute;
+    height: 100px;
+    width: 0px;
+    border: 70px solid black;
+    transform: translate(120px, 0px);
+    clip-path: polygon(13% 0%, 0 55%, 100% 40%);
+
+}
+
+#crabe #corpsdroite2{
+    position: absolute;
+    height: 100px;
+    width: 0px;
+    border: 70px solid black;
+    transform: translate(120px, 29px);
+    clip-path: polygon(0 43%, 14% 100%, 100% 28%);
+
+}
+
+#crabe #corpsgauche1{
+    position:absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid black;
+    transform: translate(-115px,29px);
+    clip-path: polygon(0 30%, 83% 100%, 100% 45%);
+    
+
+}
+
+#crabe #corpsgauche2{
+    position:absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid black;
+    transform: translate(-114px,-5px);
+    clip-path: polygon(3% 45%, 100% 61%, 80% 2%);
+
+}
+
+#crabe #pattedroite{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid blueviolet;
+    transform: translate(130px,45px);
+    clip-path: polygon(37% 69%, 57% 97%, 89% 25%);
+}
+    
+#crabe #pattegauche{
+    position:absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid blueviolet;
+    transform: translate(-103px,73px) rotate(-10deg);
+    clip-path: polygon(46% 62%, 13% 89%, 3% 6%);
+}
+
+
+#crabe #patteavandroite{
+    position:absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid greenyellow;
+    transform: translate(100px,-130px);
+    clip-path: polygon(85% 60%, 80% 80%, 25% 53%);
+}
+
+
+#crabe #patteavangauche{
+    position:absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid greenyellow;
+    transform: translate(-120px,-145px) rotate(-3deg);
+    clip-path: polygon(85% 61%, 40% 84%, 23% 65%);
+}
+
+#crabe #brasdroit{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid rgb(255, 47, 203);
+    transform: translate(188px, -142px) rotate(110deg);
+    clip-path: polygon(84% 60%, 91% 89%, 61% 63%);
+}
+
+
+#crabe #brasgauche{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid rgb(255, 47, 203);
+    transform: translate(-133px, -128px) rotate(123deg);
+    clip-path: polygon(71% 53%, 47% 63%, 37% 31%);
+
+}
+
+#crabe #avantbrasdroit{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid yellow;
+    transform: translate(-138px, -208px) rotate(-18deg);  
+    clip-path: polygon(55% 87%, 24% 70%, 68% 30%);
+}
+
+#crabe #avantbrasgauche{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid yellow;
+    transform: translate(154px, -163px) rotate(15deg);  
+    clip-path: polygon(53% 60%, 24% 70%, 25% 13%);
+}
+
+
+#crabe #pincedroite{
+    position: absolute;
+    height: 100px;
+    width: 0;
+    border: 70px solid rgb(10, 245, 233);
+    transform: translate(128px, -195px) rotate(5deg); 
+    clip-path: polygon(57% 23%, 48% 51%, 34% 34%);
+
+}
+
+#crabe #pincegauche{
+        position: absolute;
+        height: 100px;
+        width: 0;
+        border: 70px solid rgb(10, 245, 233);
+        transform: translate(-105px, -225px) rotate(-3deg);
+        clip-path: polygon(63% 42%, 40% 59%, 34% 34%);
+    
+    }
 
 @media (max-width: 320px) {
     #animal{
