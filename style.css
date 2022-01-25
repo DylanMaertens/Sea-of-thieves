@@ -7,7 +7,13 @@ body{
 }
 h1, p{
     color: white;
+    padding-left: 0.5em;
 }
+
+#animal *{
+    transition-duration: 1s;
+}
+
 #poisson{
     display: flex;
     justify-content: center;
@@ -19,7 +25,7 @@ h1, p{
     height: 0;
     width: 0;
     border:150px solid rgb(0, 255, 136);
-    transform: translate(0,70px) rotate(45deg);
+    transform: translate(70px,70px) rotate(45deg);
 }
 
 #poisson #carre2{
@@ -123,12 +129,12 @@ h1, p{
 }
 
 #crabe #corps1{
-    
     height: 0;
     width: 0;
     border: 70px solid orangered;
     -webkit-clip-path: polygon(19% 100%, 85% 100%, 100% 0, 0 0); 
     clip-path: polygon(19% 100%, 85% 100%, 100% 0, 0 0);
+    transform:translate(0,0);
 }
 
 #crabe #corps2{
@@ -228,7 +234,6 @@ h1, p{
     clip-path: polygon(84% 60%, 91% 89%, 61% 63%);
 }
 
-
 #crabe #brasgauche{
     position: absolute;
     height: 100px;
@@ -277,6 +282,13 @@ h1, p{
         clip-path: polygon(63% 42%, 40% 59%, 34% 34%);
     
     }
+@media (max-width:700px ){
+    #animal *{
+        transition-duration: 1s;
+        transform: scale(.6,.6);
+    }
+}
+
 
 @media (max-width: 320px) {
     #animal{
@@ -285,17 +297,40 @@ h1, p{
 }
 
 @media  (width: 414px) and (height:896px){
-    #animal *{
-        transform: scale(.6,.6);
+    #animal #crabe *{
+        border-color:red;
     }
-    
+
+    #crabe #corps1{
+        height: 0;
+        width: 0;
+        border: 106px solid red;
+        -webkit-clip-path: polygon(19% 100%, 85% 100%, 100% 0, 0 0); 
+        clip-path: polygon(20% 100%, 85% 100%, 100% 0, 0 0);
+    }
+
     #animal #poisson *{
         border-color: red;
     }
+    
+    #animal #pingouin *{
+        border-color: red;
+    }
+    
     #poisson #trianglehaut{
         border-top: 120px solid rgb(255, 0, 0);
         border-bottom: 120px solid transparent;
         border-left: 120px solid transparent;
         border-right: 120px solid transparent;
+    }
+    #poisson #trianglebas{
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-top: 120px solid red;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        transform: translate(-139.5px,30px) rotate(135deg);
     }
 }
