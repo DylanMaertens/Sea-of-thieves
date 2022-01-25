@@ -18,7 +18,7 @@ h1, p{
     display: flex;
     justify-content: center;
     margin-top:3em;
-    transform:translate(4em,0)
+    transform:translate(3em,0)
 }
 
 #poisson #carre1{
@@ -280,8 +280,8 @@ h1, p{
         border: 70px solid rgb(10, 245, 233);
         transform: translate(-105px, -225px) rotate(-3deg);
         clip-path: polygon(63% 42%, 40% 59%, 34% 34%);
-    
     }
+
 @media (max-width:700px ){
     #animal *{
         transition-duration: 1s;
